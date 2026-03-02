@@ -1,0 +1,275 @@
+import { Section } from "@/components/Section";
+import { ExecutionLine } from "@/components/ExecutionLine";
+import { ScrollFade } from "@/components/ScrollFade";
+
+export default function Home() {
+  return (
+    <main>
+      {/* 1. HERO */}
+      <section className="min-h-screen bg-background text-primary flex flex-col justify-center px-6 md:px-8">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-16 lg:gap-12">
+            <div className="flex-1">
+              <ScrollFade>
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] max-w-3xl">
+                  You don&apos;t lose LPs in meetings.
+                  <br />
+                  You lose them in the gaps between them.
+                </h1>
+                <p className="mt-8 text-xl md:text-2xl font-light text-primary/90 tracking-tight">
+                  Capital is scarce. Execution can&apos;t be.
+                </p>
+                <p className="mt-6 text-secondary max-w-xl font-light leading-relaxed">
+                  TOMO closes the execution gaps that quietly cost you momentum —
+                  across email, calendar, assistants, and internal threads.
+                </p>
+                <a
+                  href="#pilot"
+                  className="inline-block mt-10 bg-accent text-primary px-8 py-4 font-medium text-sm tracking-wide hover:bg-accent/90 transition-colors"
+                >
+                  Request demo
+                </a>
+              </ScrollFade>
+            </div>
+            <div className="flex-shrink-0 lg:w-96">
+              <ExecutionLine />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. THE PROBLEM */}
+      <Section variant="light">
+        <ScrollFade>
+          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-6">
+            The Problem
+          </h2>
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.15] max-w-3xl">
+            Most raises don&apos;t fall apart.
+            <br />
+            They drift.
+          </h3>
+          <div className="mt-16 space-y-8 max-w-2xl">
+            <p className="text-lg font-light leading-relaxed">
+              If you&apos;ve raised capital in the last year, you know that
+              it&apos;s harder than ever — LPs move slower, diligence drags,
+              cycles are stretched.
+            </p>
+            <p className="text-lg font-light leading-relaxed">
+              But most raises don&apos;t fall apart because the story is weak.
+              They drift because:
+            </p>
+            <ul className="space-y-6 text-lg font-light leading-relaxed list-disc list-inside">
+              <li>
+                A follow-up goes out 1 week late (or not at all).
+              </li>
+              <li>An LP goes quiet and no one notices.</li>
+              <li>
+                A DDQ sits in someone&apos;s inbox while everyone assumes
+                it&apos;s handled.
+              </li>
+            </ul>
+          </div>
+        </ScrollFade>
+      </Section>
+
+      {/* 3. OUR INSIGHT */}
+      <Section variant="dark">
+        <ScrollFade>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.15] max-w-3xl">
+            Momentum isn&apos;t magic.
+            <br />
+            It&apos;s disciplined execution.
+          </h2>
+          <p className="mt-12 text-lg font-light text-secondary leading-relaxed max-w-2xl">
+            The top IR teams respond within an hour. That kind of discipline
+            compounds. They don&apos;t rely on memory. They rely on systems.
+          </p>
+          <ul className="mt-12 space-y-4 font-light text-primary/90">
+            <li>Close loose ends quickly</li>
+            <li>Define clear next steps after every meeting</li>
+            <li>Respond and follow-up quickly</li>
+            <li>Re-engage before interest cools</li>
+            <li>Know which LPs are heating up and which are cooling</li>
+          </ul>
+          <p className="mt-16 text-lg font-light text-secondary italic max-w-2xl">
+            Successful capital raises are the result of clean, disciplined
+            execution.
+          </p>
+        </ScrollFade>
+      </Section>
+
+      {/* 4. WHAT TOMO DOES */}
+      <Section variant="dark">
+        <ScrollFade>
+          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-6">
+            What TOMO Does
+          </h2>
+          <p className="text-xl font-light text-primary/90 max-w-2xl mb-16">
+            TOMO isn&apos;t a CRM with AI bolted on. It&apos;s your fundraising
+            teammate who works 24/7 with your existing tools.
+          </p>
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+            <div className="flex-1">
+              <p className="text-sm font-medium tracking-widest uppercase text-secondary mb-8">
+                TOMO ensures:
+              </p>
+              <ul className="space-y-6 font-light text-primary/90">
+                <li>Every interaction ends with a clear next step</li>
+                <li>Follow-ups happen on time</li>
+                <li>Ownership is visible across your team</li>
+                <li>Email responses are drafted (which you approve)</li>
+                <li>You can see who&apos;s active, and who&apos;s drifting</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="border border-primary/20 bg-background p-4 w-full max-w-sm">
+                <p className="text-xs text-secondary mb-1">LP: Blackstone</p>
+                <p className="text-xs text-secondary mb-2">
+                  Last interaction: 9 days ago
+                </p>
+                <p className="text-sm text-primary">
+                  Suggested action: Follow-up on allocation sizing
+                </p>
+              </div>
+              <div className="border border-primary/20 bg-background p-4 w-full max-w-sm">
+                <p className="text-xs text-secondary mb-1">LP: KKR</p>
+                <p className="text-xs text-secondary mb-2">
+                  Last interaction: 3 days ago
+                </p>
+                <p className="text-sm text-primary">
+                  Suggested action: Send DDQ response
+                </p>
+              </div>
+              <div className="border border-primary/20 bg-background p-4 w-full max-w-sm">
+                <p className="text-xs text-secondary mb-1">LP: Apollo</p>
+                <p className="text-xs text-secondary mb-2">
+                  Last interaction: 14 days ago
+                </p>
+                <p className="text-sm text-primary">
+                  Suggested action: Re-engagement check-in
+                </p>
+              </div>
+            </div>
+          </div>
+        </ScrollFade>
+      </Section>
+
+      {/* 5. HOW TOMO WORKS */}
+      <Section variant="dark">
+        <ScrollFade>
+          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-16">
+            How TOMO Works
+          </h2>
+          <div className="space-y-0">
+            {[
+              {
+                title: "It understands the thread",
+                desc: "TOMO reads your email and calendar context to see the full picture.",
+              },
+              {
+                title: "It defines the next step",
+                desc: "Every interaction gets a clear, assigned follow-up.",
+              },
+              {
+                title: "It closes loops",
+                desc: "Nothing slips. Follow-ups are tracked and completed.",
+              },
+              {
+                title: "It tracks momentum",
+                desc: "See which LPs are heating up and which need attention.",
+              },
+            ].map((step, i) => (
+              <div key={step.title}>
+                <div className="py-8">
+                  <h3 className="text-xl font-medium text-primary">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-secondary font-light">{step.desc}</p>
+                </div>
+                {i < 3 && (
+                  <div className="border-t border-primary/10" />
+                )}
+              </div>
+            ))}
+          </div>
+        </ScrollFade>
+      </Section>
+
+      {/* 6. OUTCOMES */}
+      <Section variant="dark">
+        <ScrollFade>
+          <div className="text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-primary">
+            5–10 hours
+          </div>
+          <p className="mt-4 text-xl text-secondary font-light">
+            Recovered weekly
+          </p>
+          <ul className="mt-12 space-y-4 font-light text-primary/90">
+            <li>Faster follow-up cycles</li>
+            <li>Clear visibility into hot vs. cooling LPs</li>
+            <li>Fewer dropped threads</li>
+          </ul>
+        </ScrollFade>
+      </Section>
+
+      {/* 7. BUILT FOR */}
+      <Section variant="dark">
+        <ScrollFade>
+          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-12">
+            Built for the Buyside & Relationship-driven Firms
+          </h2>
+          <ul className="space-y-4 font-light text-primary/90 text-lg">
+            <li>Hedge Funds</li>
+            <li>Private Equity</li>
+            <li>Venture Capital</li>
+            <li>Family Offices</li>
+            <li>Private Wealth teams</li>
+          </ul>
+        </ScrollFade>
+      </Section>
+
+      {/* 8. SECURITY */}
+      <Section variant="dark">
+        <ScrollFade>
+          <div className="border-t border-primary/10 pt-12">
+            <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-8">
+              Security
+            </h2>
+            <ul className="space-y-4 font-light text-primary/90">
+              <li>Encryption in transit and at rest</li>
+              <li>Strict access controls</li>
+              <li>No training on proprietary data</li>
+              <li>Full human approval for outbound actions</li>
+              <li>Audit logs</li>
+            </ul>
+          </div>
+        </ScrollFade>
+      </Section>
+
+      {/* 9. PILOT / FINAL CTA */}
+      <section
+        id="pilot"
+        className="py-24 md:py-32 bg-background text-primary"
+      >
+        <div className="max-w-6xl mx-auto px-6 md:px-8">
+          <ScrollFade>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.15] max-w-3xl">
+              In tight fundraising markets, small execution wins compound.
+            </h2>
+            <p className="mt-8 text-lg font-light text-secondary max-w-xl">
+              Join our pilot program. We&apos;re onboarding a limited number of
+              managers.
+            </p>
+            <a
+              href="#"
+              className="inline-block mt-10 bg-accent text-primary px-8 py-4 font-medium text-sm tracking-wide hover:bg-accent/90 transition-colors"
+            >
+              Join our waitlist
+            </a>
+          </ScrollFade>
+        </div>
+      </section>
+    </main>
+  );
+}
