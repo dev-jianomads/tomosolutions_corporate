@@ -16,12 +16,10 @@ export default function Home() {
                   <br />
                   You lose them in the gaps between them.
                 </h1>
-                <p className="mt-8 text-xl md:text-2xl font-light text-primary/90 tracking-tight">
-                  Capital is scarce. Execution can&apos;t be.
-                </p>
-                <p className="mt-6 text-secondary max-w-xl font-light leading-relaxed">
-                  TOMO closes the execution gaps that quietly cost you momentum —
-                  across email, calendar, assistants, and internal threads.
+                <p className="mt-8 text-secondary max-w-xl font-light leading-relaxed">
+                  Capital is scarce. Execution can&apos;t be. TOMO closes the
+                  execution gaps that quietly cost you momentum — across email,
+                  calendar, assistants, and internal threads.
                 </p>
                 <a
                   href="#pilot"
@@ -59,16 +57,23 @@ export default function Home() {
               But most raises don&apos;t fall apart because the story is weak.
               They drift because:
             </p>
-            <ul className="space-y-6 text-lg font-light leading-relaxed list-disc list-inside">
-              <li>
-                A follow-up goes out 1 week late (or not at all).
-              </li>
+            <ol className="space-y-6 text-lg font-light leading-relaxed list-decimal list-inside">
+              <li>A follow-up goes out 1 week late (or not at all).</li>
               <li>An LP goes quiet and no one notices.</li>
               <li>
                 A DDQ sits in someone&apos;s inbox while everyone assumes
                 it&apos;s handled.
               </li>
-            </ul>
+            </ol>
+            <p className="text-lg font-light leading-relaxed">
+              No one decides to drop the ball. It just happens. Fundraising now
+              runs across inboxes, executive assistants, chat threads, calendars,
+              internal teams, and a CRM that&apos;s always slightly behind
+              reality.
+            </p>
+            <p className="text-lg font-light leading-relaxed">
+              That&apos;s where deals slip.
+            </p>
           </div>
         </ScrollFade>
       </Section>
@@ -76,25 +81,36 @@ export default function Home() {
       {/* 3. OUR INSIGHT */}
       <Section variant="dark">
         <ScrollFade>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.15] max-w-3xl">
+          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-6">
+            Our insight
+          </h2>
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.15] max-w-3xl">
             Momentum isn&apos;t magic.
             <br />
             It&apos;s disciplined execution.
-          </h2>
+          </h3>
           <p className="mt-12 text-lg font-light text-secondary leading-relaxed max-w-2xl">
             The top IR teams respond within an hour. That kind of discipline
             compounds. They don&apos;t rely on memory. They rely on systems.
           </p>
-          <ul className="mt-12 space-y-4 font-light text-primary/90">
+          <p className="mt-8 text-sm font-medium tracking-widest uppercase text-secondary">
+            In our experience, the best fundraisers:
+          </p>
+          <ul className="mt-6 space-y-4 font-light text-primary/90">
             <li>Close loose ends quickly</li>
-            <li>Define clear next steps after every meeting</li>
-            <li>Respond and follow-up quickly</li>
+            <li>Define clear next steps after every single meeting</li>
+            <li>Respond/follow-up quickly</li>
             <li>Re-engage before interest cools</li>
             <li>Know which LPs are heating up and which are cooling</li>
           </ul>
-          <p className="mt-16 text-lg font-light text-secondary italic max-w-2xl">
+          <p className="mt-12 text-lg font-light text-secondary italic max-w-2xl">
             Successful capital raises are the result of clean, disciplined
             execution.
+          </p>
+          <p className="mt-8 text-lg font-light text-secondary leading-relaxed max-w-2xl">
+            When execution is consistent, fundraising feels controlled and money
+            flows. When it isn&apos;t, LPs lose interest — even when your
+            performance is strong.
           </p>
         </ScrollFade>
       </Section>
@@ -103,24 +119,31 @@ export default function Home() {
       <Section variant="dark">
         <ScrollFade>
           <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-6">
-            What TOMO Does
+            What TOMO does
           </h2>
-          <p className="text-xl font-light text-primary/90 max-w-2xl mb-16">
+          <p className="text-xl font-light text-primary/90 max-w-2xl">
             TOMO isn&apos;t a CRM with AI bolted on. It&apos;s your fundraising
             teammate who works 24/7 with your existing tools.
           </p>
-          <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+          <p className="mt-6 text-lg font-light text-secondary max-w-2xl">
+            Your CRM records contacts and history. Your calendar manages your
+            availability. Your inbox never stops.
+          </p>
+          <p className="mt-6 text-lg font-light text-primary/90 max-w-2xl">
+            TOMO focuses on one thing: the next step. It ensures:
+          </p>
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 mt-12">
             <div className="flex-1">
-              <p className="text-sm font-medium tracking-widest uppercase text-secondary mb-8">
-                TOMO ensures:
-              </p>
-              <ul className="space-y-6 font-light text-primary/90">
+              <ol className="space-y-6 font-light text-primary/90 list-decimal list-inside">
                 <li>Every interaction ends with a clear next step</li>
                 <li>Follow-ups happen on time</li>
                 <li>Ownership is visible across your team</li>
                 <li>Email responses are drafted (which you approve)</li>
                 <li>You can see who&apos;s active, and who&apos;s drifting</li>
-              </ul>
+              </ol>
+              <p className="mt-10 text-lg font-light text-primary/90">
+                You keep your stack. Nothing slips.
+              </p>
             </div>
             <div className="flex flex-col gap-4">
               <div className="border border-primary/20 bg-background p-4 w-full max-w-sm">
@@ -165,19 +188,19 @@ export default function Home() {
             {[
               {
                 title: "It understands the thread",
-                desc: "TOMO reads your email and calendar context to see the full picture.",
+                desc: "TOMO connects to your email, messaging apps, calendar, and CRM. It sees the live state of conversations, not just what's been logged later.",
               },
               {
                 title: "It defines the next step",
-                desc: "Every interaction gets a clear, assigned follow-up.",
+                desc: "It flags unclear ownership, missing follow-ups, and stalled exchanges.",
               },
               {
                 title: "It closes loops",
-                desc: "Nothing slips. Follow-ups are tracked and completed.",
+                desc: "Follow-ups are drafted. Scheduling is coordinated. Reminders are surfaced. You approve. TOMO executes.",
               },
               {
                 title: "It tracks momentum",
-                desc: "See which LPs are heating up and which need attention.",
+                desc: "You see who is active, who is quiet, and where risk is building — before it becomes visible externally.",
               },
             ].map((step, i) => (
               <div key={step.title}>
@@ -193,32 +216,48 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p className="mt-12 text-lg font-light text-primary/90">
+            Execution becomes deliberate — not reactive.
+          </p>
         </ScrollFade>
       </Section>
 
       {/* 6. OUTCOMES */}
       <Section variant="dark">
         <ScrollFade>
+          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-8">
+            TOMO Outcomes
+          </h2>
+          <p className="text-lg font-light text-secondary mb-8">
+            Pilot teams typically see:
+          </p>
           <div className="text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-primary">
             5–10 hours
           </div>
           <p className="mt-4 text-xl text-secondary font-light">
-            Recovered weekly
+            per week back from coordination
           </p>
           <ul className="mt-12 space-y-4 font-light text-primary/90">
             <li>Faster follow-up cycles</li>
             <li>Clear visibility into hot vs. cooling LPs</li>
             <li>Fewer dropped threads</li>
           </ul>
+          <p className="mt-16 text-lg font-light text-primary/90 max-w-2xl">
+            In tight fundraising markets, small execution wins compound.
+          </p>
         </ScrollFade>
       </Section>
 
       {/* 7. BUILT FOR */}
       <Section variant="dark">
         <ScrollFade>
-          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-12">
+          <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-6">
             Built for the Buyside & Relationship-driven Firms
           </h2>
+          <p className="text-lg font-light text-secondary max-w-2xl mb-8">
+            TOMO is built by fund managers who have lived this first-hand. We
+            already work with top tier:
+          </p>
           <ul className="space-y-4 font-light text-primary/90 text-lg">
             <li>Hedge Funds</li>
             <li>Private Equity</li>
@@ -226,6 +265,10 @@ export default function Home() {
             <li>Family Offices</li>
             <li>Private Wealth teams</li>
           </ul>
+          <p className="mt-12 text-lg font-light text-secondary max-w-2xl">
+            If fundraising depends on responsiveness, timing, and trust,
+            execution discipline matters.
+          </p>
         </ScrollFade>
       </Section>
 
@@ -233,16 +276,22 @@ export default function Home() {
       <Section variant="dark">
         <ScrollFade>
           <div className="border-t border-primary/10 pt-12">
-            <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-8">
-              Security
+            <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-6">
+              Security & Control
             </h2>
+            <p className="text-lg font-light text-secondary max-w-2xl mb-8">
+              TOMO is built specifically for regulated environments.
+            </p>
             <ul className="space-y-4 font-light text-primary/90">
               <li>Encryption in transit and at rest</li>
               <li>Strict access controls</li>
-              <li>No training on proprietary data</li>
+              <li>No training on your proprietary data</li>
               <li>Full human approval for outbound actions</li>
               <li>Audit logs</li>
             </ul>
+            <p className="mt-10 text-lg font-light text-primary/90">
+              You are always in control.
+            </p>
           </div>
         </ScrollFade>
       </Section>
@@ -254,12 +303,22 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <ScrollFade>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.15] max-w-3xl">
-              In tight fundraising markets, small execution wins compound.
+            <h2 className="text-sm font-medium tracking-widest uppercase text-secondary mb-6">
+              Pilot
             </h2>
-            <p className="mt-8 text-lg font-light text-secondary max-w-xl">
+            <p className="text-xl font-light text-primary/90 max-w-2xl">
               Join our pilot program. We&apos;re onboarding a limited number of
-              managers.
+              managers into our program, which includes:
+            </p>
+            <ul className="mt-8 space-y-4 font-light text-primary/90">
+              <li>Integration with key tools (Email, Calendar, CRM)</li>
+              <li>Fundraising workflow automation</li>
+              <li>Momentum signals</li>
+              <li>White glove support</li>
+            </ul>
+            <p className="mt-10 text-lg font-light text-secondary max-w-xl">
+              If you&apos;re looking for an edge in a difficult market, let&apos;s
+              talk.
             </p>
             <a
               href="#"
