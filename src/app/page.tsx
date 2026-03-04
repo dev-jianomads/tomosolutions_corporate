@@ -118,7 +118,7 @@ export default function Home() {
           <h2 className="text-xl md:text-2xl font-medium tracking-widest uppercase text-secondary mb-6">
             What TOMO does
           </h2>
-          <p className="text-xl font-light text-primary/90 max-w-2xl">
+          <p className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.15] max-w-3xl text-primary/90">
             TOMO isn&apos;t a CRM with AI bolted on. It&apos;s your fundraising
             teammate who works 24/7 with your existing tools.
           </p>
